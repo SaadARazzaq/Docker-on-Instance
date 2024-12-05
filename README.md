@@ -128,6 +128,16 @@ sudo systemctl status docker
 
 ## Step 12: Set Up Docker Compose (Optional)
 
+```bash
+cat /usr/local/bin/docker-compose
+```
+
+```bash
+sudo rm /usr/local/bin/docker-compose
+```
+
+
+
 1. Download Docker Compose:
    
    ```shell
@@ -138,6 +148,12 @@ sudo systemctl status docker
 
    ```bash
    sudo curl -L "https://github.com/docker/compose/releases/download/$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep -oP 'tag_name": "v\K[^\"]*')/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   ```
+
+   OR
+
+   ```bash
+   sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
    ```
    
 3. Make it executable:
