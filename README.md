@@ -97,7 +97,7 @@ docker --version
 Run the `hello-world` container to verify everything is working correctly.
 
 ```shell 
-docker run hello-world
+sudo docker run hello-world
 ```
 
 ---
